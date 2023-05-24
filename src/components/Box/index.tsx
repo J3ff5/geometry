@@ -5,7 +5,7 @@ import { Mesh } from 'three'
 export default function Box() {
   const ref = useRef<Mesh>(null)
 
-  const [clicked, setClicked] = React.useState(false as boolean)
+  const [clicked, setClicked] = React.useState(true as boolean)
 
   useFrame(() => {
     if (ref.current) {
